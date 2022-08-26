@@ -1,10 +1,15 @@
-let n1 = 131646619
-let n1String = n1.toString().split("")
+let n1 = 5
+let n2 = 8
 
-const lastNumber = Number(n1String[n1String.length - 1]);
-if(lastNumber % 2 === 0){
-    console.log(`${n1} é par, porque a unidade ${lastNumber} é par.`);
+sum = n1 + n2
+
+let sumString = sum.toString().split("")
+
+const lastNumberSum = Number(sumString[sumString.length - 1]);
+
+if(lastNumberSum % 2 === 0){
+    console.log(`${sum} é par, porque o número ${lastNumberSum} é divisível por 2`);
 } else {
-    console.log(`${n1} é ímpar, porque a unidade ${lastNumber} é ímpar.`);
+    console.log(`${sum} é ímpar, porque o número ${lastNumberSum} não é divisível por 2.`);
 }
 
