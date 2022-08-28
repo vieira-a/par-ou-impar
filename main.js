@@ -1,5 +1,5 @@
 let n1 = 5
-let n2 = 8
+let n2 = Math.floor(Math.random() * 11);
 
 sum = n1 + n2
 
@@ -12,4 +12,3 @@ if(lastNumberSum % 2 === 0){
 } else {
     console.log(`${sum} é ímpar, porque o número ${lastNumberSum} não é divisível por 2.`);
 }
-
