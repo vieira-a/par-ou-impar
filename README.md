@@ -11,7 +11,8 @@ Um jogo de par ou ímpar.
 
 [x] O script sorteia um número aleatório entre 0-10, sem levar em consideração o número escolhido pelo usuário; 
     [x] Armazenar em variável o número sorteado
-[] A aplicação compara as entradas do usuário e do script e identifica se a soma dos dois números é um número par, ou ímpar.
+[x] A aplicação compara as entradas do usuário e do script e identifica se a soma dos dois números é um número par, ou ímpar.
+[x] Exibir resultado em texto para testar.
 [] Exibir o resultado num modal.
 [] Ao fechar o modal, a aplicação inicia novamente.
 
