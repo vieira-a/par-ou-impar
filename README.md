@@ -29,8 +29,8 @@ Um jogo de par ou ímpar.
 - [x] Exibir resultado no HTML para testar.
    - [x] Exibir frase de vitória/derrota, e frase com as opções do jogo.
 
-- [] Exibir o resultado num modal
-   - [] Ao fechar o modal, a aplicação inicia novamente.
+- [ ] Exibir o resultado num modal
+   - [ ] Ao fechar o modal, a aplicação inicia novamente.
 ### CSS
 
-- [] Criar estilo para a página
+- [ ] Criar estilo para a página
