@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+        Google fonts
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!--CSS style-->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
     <title>Par ou Impar</title>
 </head>
 <body>
@@ -12,15 +22,31 @@
     </header>
     <main>
         <div class="choose">
-            <h2>Escolha uma das opções</h2>
-            <button class="par">Par</button>
-            <button class="impar">Impar</button>
+            <header class="header">
+                <h2>Escolha uma das opções</h2>
+            </header>
+            <div class="container">
+                <button class="par"><span>Par</span></button>
+                <button class="impar"><span>Impar</span></button>
+            </div>
         </div>
         <div class="choosenumber">
             Digite um número: <input type="number" id="usernumber" placeholder="Escolha entre 0 e 10">
         </div>
-        <div class="play">
-            <button class="jogar" onclick="playGame()">Jogar</button>
+        
+        <div class="numbers">
+            <button class="number"><span>0</span></button>
+            <button class="number"><span>1</span></button>
+            <button class="number"><span>2</span></button>
+            <button class="number"><span>3</span></button>
+            <button class="number"><span>4</span></button>
+            <button class="number"><span>5</span></button>
+            <button class="number"><span>6</span></button>
+            <button class="number"><span>7</span></button>
+            <button class="number"><span>8</span></button>
+            <button class="number"><span>9</span></button>
+            <button class="number"><span>10</span></button>
+            <button class="jogar" onclick="playGame()"><span>Jogar</span></button>
         </div>
         <div class="gameresult">
             <h3 class="result"></h3>
