@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     
+    <!--CSS Reset-->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    
     <!--CSS style-->
     <link rel="stylesheet" href="/assets/css/style.css">
 
@@ -21,13 +24,15 @@
         <h1>Bem vindo ao jogo de Par ou Impar</h1>
     </header>
     <main>
+        
+            
         <div class="choose">
-            <header class="header">
+            <header class="header-choose">
                 <h2>Escolha uma das opções</h2>
             </header>
             <div class="container">
-                <button class="par"><span>Par</span></button>
-                <button class="impar"><span>Impar</span></button>
+                <button class="par">Par</button>
+                <button class="impar">Impar</button>
             </div>
         </div>
         <div class="choosenumber">
@@ -35,23 +40,25 @@
         </div>
         
         <div class="numbers">
-            <button class="number"><span>0</span></button>
-            <button class="number"><span>1</span></button>
-            <button class="number"><span>2</span></button>
-            <button class="number"><span>3</span></button>
-            <button class="number"><span>4</span></button>
-            <button class="number"><span>5</span></button>
-            <button class="number"><span>6</span></button>
-            <button class="number"><span>7</span></button>
-            <button class="number"><span>8</span></button>
-            <button class="number"><span>9</span></button>
-            <button class="number"><span>10</span></button>
-            <button class="jogar" onclick="playGame()"><span>Jogar</span></button>
+            <button class="number">0</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="number">10</button>
+            <button class="jogar" onclick="playGame()">Jogar</button>
         </div>
         <div class="gameresult">
             <h3 class="result"></h3>
             <h3 class="winlose"></h3>
-    </div>
+        </div>
+
+        
     </main>
     <script src="/main.js"></script>
 </body>

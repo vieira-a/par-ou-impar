@@ -7,11 +7,27 @@
     --green: #24d0e0;
 }
 
-
 html {
     font-family: 'Roboto', sans-serif;
     background-color: var(--bg-main);
     color: var(--white);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+body {
+    width: 100vw;
+    margin-inline: auto;
+    overflow: hidden;
 }
 
 button {
@@ -20,16 +36,23 @@ button {
     background-color: inherit;
     font: inherit;
     color: inherit;
-
 }
 
+header.header {
+    margin: 2rem;
+}
+
+
+main {
+    margin-inline: 2rem
+}
 main button {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 4rem;
+    height: 4rem;
     background-color: var(--bg-main);
     border-radius: .5rem;
-    box-shadow: inset 1px 0px 10px 2px var(--shadow-2);
-    transform: rotate(45deg);
+    box-shadow: inset 1px 0px 2px 1px var(--shadow-2);
+    /*transform: rotate(45deg);*/
 }
 
 main button:hover {
@@ -38,32 +61,17 @@ main button:hover {
 
 main .numbers {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1.5rem;
+    grid-template-columns: min-content min-content min-content min-content;
+    gap: 1rem;
     padding-block: 3rem;
-}
-
-main .numbers .number {
-    border: 1px solid red;
 }
 
 main .choose .container {
     display: flex;
+    padding-block: 3rem;
     gap: 1rem;
-}
-
-button span {
-    font-weight: bold;
-    display: inline-block;
-    transform: rotate(-45deg);
 }
 
 main .numbers button {
     font-weight: bold;
 }
-
-main .numbers button span {
-    display: inline-block;
-    transform: rotate(-45deg);
-}
-
