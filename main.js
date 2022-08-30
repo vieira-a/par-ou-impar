@@ -8,11 +8,17 @@ const optionPar = document.querySelector('.par');
 
 const optionImpar = document.querySelector('.impar');
 
+const showGameResult = document.querySelector('.show-gameresult');
+
+const closeGameResult = document.getElementsByClassName('close')[0];
+
 const result = document.querySelector('.result');
 
 const winlose = document.querySelector('.winlose');
 
 const buttonsNumbers = document.querySelectorAll('.number');
+
+const buttonPlay = document.querySelector('.jogar');
 
 optionPar.addEventListener('click', function changeColorPar() {
     
@@ -70,6 +76,14 @@ function playGame() {
     parOuImpar();
     
     userWinOrLose();
+
+    showGameResult.style.display = 'block';
+    
+}
+
+closeGameResult.onclick = function() {
+    showGameResult.style.display = 'none';
+    window.location.reload()
 }
 
 //Game result defined: gameResult = "par"; gameResult = "impar"
@@ -87,13 +101,13 @@ function parOuImpar() {
         
         gameResult = "par"
         
-        result.innerHTML = `Você jogou ${userNumber}, o computador jogou ${computerNumber}. Resultado: ${sum} é par`;
+        result.innerHTML = `Você jogou ${userNumber}, o computador jogou ${computerNumber}. Resultado: ${sum} é par.`;
         
     } else {
         
         gameResult = "impar"
         
-        result.innerHTML = `Você jogou ${userNumber}, o computador jogou ${computerNumber}. Resultado: ${sum} é ímpar`;
+        result.innerHTML = `Você jogou ${userNumber}, o computador jogou ${computerNumber}. Resultado: ${sum} é ímpar.`;
     }
 }
 
@@ -101,10 +115,10 @@ function userWinOrLose() {
     
     if(userOption === gameResult){
  
-        winlose.innerHTML = "Você ganhou";
+        winlose.innerHTML = "Parabéns, você ganhou! &#127942;";
     
     } else {
  
-        winlose.innerHTML = "Você perdeu";   
+        winlose.innerHTML = "Infelizmente você perdeu! &#128577;";   
     }
 }

@@ -88,6 +88,51 @@ main .numbers button {
     font-weight: bold;
 }
 
+.show-gameresult {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: var(--bg-main);
+}
+
+.show-gameresult-content {
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--green);
+    width: 80%;
+    text-align: center;
+}
+
+.show-gameresult-content p {
+    font-size: 1.4rem;
+    line-height: 150%;
+}
+
+.show-gameresult-content h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 150%;
+}
+
+.close {
+    color: var(--white);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--green);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 footer {
     text-align: center;
 }
