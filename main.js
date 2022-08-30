@@ -1,20 +1,36 @@
 let userOption = ""
 
-let result = document.querySelector('.result');
-
-let winlose = document.querySelector('.winlose');
+let userNumber = ""
 
 let gameResult = ""
+
+const result = document.querySelector('.result');
+
+const winlose = document.querySelector('.winlose');
+
+const buttonsNumbers = document.querySelectorAll('.number');
 
 document.querySelector('.par').addEventListener('click', function () {
     userOption = "par"
     console.log(userOption)
-  })
+})
 
-  document.querySelector('.impar').addEventListener('click', function () {
+document.querySelector('.impar').addEventListener('click', function () {
     userOption = "impar"
     console.log(userOption)
-  })
+})
+
+//Get user number on clicked button
+buttonsNumbers.forEach(function(currentButton) {
+
+    currentButton.addEventListener('click', function () {
+        
+        userNumber = Number(currentButton.textContent)
+        
+        console.log(userNumber)
+        
+    })
+})
 
 function playGame() {
     parOuImpar();
@@ -24,11 +40,11 @@ function playGame() {
 //Define o resultado do jogo: gameResult = "par"; gameResult = "impar"
 function parOuImpar() {
 
-    let n1 = document.getElementById("usernumber").value;
+    //let n1 = document.getElementById("usernumber").value;
     
-    let n2 = Math.floor(Math.random() * 11);
+    let computerNumber = Math.floor(Math.random() * 11);
     
-    let sum = Number(n1) + Number(n2)
+    let sum = userNumber + computerNumber
     
     let sumString = sum.toString().split("")
     
@@ -36,11 +52,11 @@ function parOuImpar() {
 
     if(lastNumberSum % 2 === 0){
         gameResult = "par"
-        result.innerHTML = `Você jogou ${n1}, o computador jogou ${n2}. Resultado: ${sum} é par`;
+        result.innerHTML = `Você jogou ${userNumber}, o computador jogou ${computerNumber}. Resultado: ${sum} é par`;
         
     } else {
         gameResult = "impar"
-        result.innerHTML = `Você jogou ${n1}, o computador jogou ${n2}. Resultado: ${sum} é ímpar`;
+        result.innerHTML = `Você jogou ${userNumber}, o computador jogou ${computerNumber}. Resultado: ${sum} é ímpar`;
     }
 }
 

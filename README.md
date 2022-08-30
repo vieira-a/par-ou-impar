@@ -15,8 +15,10 @@ Um jogo de par ou ímpar.
 ### Javascript
 
 - [x] Criar itens de Interação do usuário
-   - [x] Criar botões de escolha;
+   - [x] Criar botões de escolha entre par e impar;
    - [x] Criar entrada para digitação de um número entre 0 e 10;
+   - [x] Criar botões contendo números de 0 a 10 para escolha do usuário;
+   - [x] Substituir entrada de digitação para botões
    - [x] Criar um botão para "Jogar"
 
 - [x] Criar itens de interação da aplicação
@@ -33,4 +35,4 @@ Um jogo de par ou ímpar.
    - [ ] Ao fechar o modal, a aplicação inicia novamente.
 ### CSS
 
-- [ ] Criar estilo para a página
+- [x] Criar estilo para a página
