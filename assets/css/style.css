@@ -65,7 +65,6 @@ main button:hover {
     box-shadow: 0px 0px 10px 5px var(--shadow-2);
 }
 
-
 /* button.number:focus {
     background-color: var(--green);
 } */
@@ -75,12 +74,12 @@ main .numbers {
     display: grid;
     grid-template-columns: min-content min-content min-content min-content;
     gap: 1rem;
-    padding-block: 3rem;
+    padding-block: 2rem;
 }
 
 main .choose .container {
     display: flex;
-    padding-block: 3rem;
+    padding-block: 2rem;
     gap: 1rem;
 }
 
@@ -141,5 +140,6 @@ main .numbers button {
 }
 
 footer {
+    padding-block: 2rem;
     text-align: center;
 }
