@@ -65,6 +65,12 @@ main button:hover {
     box-shadow: 0px 0px 10px 5px var(--shadow-2);
 }
 
+
+/* button.number:focus {
+    background-color: var(--green);
+} */
+
+
 main .numbers {
     display: grid;
     grid-template-columns: min-content min-content min-content min-content;

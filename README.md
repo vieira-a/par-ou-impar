@@ -27,6 +27,7 @@ Um jogo de par ou ímpar.
 - [x] Criar funções do jogo
    - [x] Criar função para definir o resultado: se é par ou ímpar, de acordo com a entrada do usuário e sorteio da aplicação;
    - [x] Criar função para definir se o usuário ganhou ou perdeu, de acordo com a sua escolha e o resultado do jogo.
+   - [x] Criar funções para mudar o background dos botões selecionados;
 
 - [x] Exibir resultado no HTML para testar.
    - [x] Exibir frase de vitória/derrota, e frase com as opções do jogo.

@@ -4,44 +4,77 @@ let userNumber = ""
 
 let gameResult = ""
 
+const optionPar = document.querySelector('.par');
+
+const optionImpar = document.querySelector('.impar');
+
 const result = document.querySelector('.result');
 
 const winlose = document.querySelector('.winlose');
 
 const buttonsNumbers = document.querySelectorAll('.number');
 
+optionPar.addEventListener('click', function changeColorPar() {
+    
+    optionImpar.style.backgroundColor = 'inherit'
+    
+    optionPar.style.backgroundColor = '#24d0e0'
+})
+
+optionImpar.addEventListener('click', function changeColorImpar () {
+    
+    optionPar.style.backgroundColor = 'inherit'
+    
+    optionImpar.style.backgroundColor = '#24d0e0'
+})
+
 document.querySelector('.par').addEventListener('click', function () {
+    
     userOption = "par"
-    console.log(userOption)
+    
 })
 
 document.querySelector('.impar').addEventListener('click', function () {
+    
     userOption = "impar"
-    console.log(userOption)
+    
 })
+
+function cleanButtonColorNumber() {
+    
+    buttonsNumbers.forEach(function(currentButton) {
+    
+        if(currentButton.style.backgroundColor = '#24d0e0') {
+    
+            currentButton.style.backgroundColor = 'inherit';
+        }
+    })
+}
 
 //Get user number on clicked button
 buttonsNumbers.forEach(function(currentButton) {
 
     currentButton.addEventListener('click', function () {
         
-        userNumber = Number(currentButton.textContent)
+        cleanButtonColorNumber()
         
-        console.log(userNumber)
+        currentButton.style.backgroundColor = '#24d0e0'
+
+        userNumber = Number(currentButton.textContent)
         
     })
 })
 
 function playGame() {
+    
     parOuImpar();
+    
     userWinOrLose();
 }
 
-//Define o resultado do jogo: gameResult = "par"; gameResult = "impar"
+//Game result defined: gameResult = "par"; gameResult = "impar"
 function parOuImpar() {
 
-    //let n1 = document.getElementById("usernumber").value;
-    
     let computerNumber = Math.floor(Math.random() * 11);
     
     let sum = userNumber + computerNumber
@@ -51,20 +84,27 @@ function parOuImpar() {
     const lastNumberSum = Number(sumString[sumString.length - 1]);
 
     if(lastNumberSum % 2 === 0){
+        
         gameResult = "par"
+        
         result.innerHTML = `Você jogou ${userNumber}, o computador jogou ${computerNumber}. Resultado: ${sum} é par`;
         
     } else {
+        
         gameResult = "impar"
+        
         result.innerHTML = `Você jogou ${userNumber}, o computador jogou ${computerNumber}. Resultado: ${sum} é ímpar`;
     }
 }
 
 function userWinOrLose() {
-    //if(userOption === "par" && gameResult === "par" || userOption === "impar" && gameResult === "impar"){
-        if(userOption === gameResult){
+    
+    if(userOption === gameResult){
+ 
         winlose.innerHTML = "Você ganhou";
+    
     } else {
+ 
         winlose.innerHTML = "Você perdeu";   
     }
 }
