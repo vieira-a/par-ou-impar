@@ -34,6 +34,9 @@ Um jogo de par ou ímpar.
 
 - [x] Exibir o resultado num modal
    - [x] Ao fechar o modal, a aplicação inicia novamente.
+
+- [x] Criar validações das entradas
+   - [x] Não permitir que, ao clicar em **Jogar**, as opções do usuário não estejam devidamente selecionadas
 ### CSS
 
 - [x] Criar estilo para a página

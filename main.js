@@ -1,12 +1,21 @@
 let userOption = ""
 
+let noUserOption = "Você precisa selecionar uma opção entre Par e Impar."
+
 let userNumber = ""
 
+let noUserNumber = "Você precisa selecionar um número entre 0 e 10."
+
 let gameResult = ""
+
 
 const optionPar = document.querySelector('.par');
 
 const optionImpar = document.querySelector('.impar');
+
+const headerChoose = document.querySelector('.validation-header-choose');
+
+const numberChoose = document.querySelector('.validation-choosenumber');
 
 const showGameResult = document.querySelector('.show-gameresult');
 
@@ -73,12 +82,24 @@ buttonsNumbers.forEach(function(currentButton) {
 
 function playGame() {
     
-    parOuImpar();
-    
-    userWinOrLose();
+    if(userOption === "") {
 
-    showGameResult.style.display = 'block';
-    
+        headerChoose.innerHTML = noUserOption;
+        
+        
+    } else if (userNumber === "") {
+
+        numberChoose.innerHTML = noUserNumber;
+
+    } else {
+
+        parOuImpar();
+        
+        userWinOrLose();
+        
+        showGameResult.style.display = 'block';
+    }
+        
 }
 
 closeGameResult.onclick = function() {
